@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="span6 center">
+			<div class="form-horizontal">
+				<div class="control-group">
+
+					<%= form_for :user, {url:sessions_path} do |f| %>
+					  <div class="login"><%#= f.label :email %><br />
+					  <%= f.email_field :email, placeholder: 'email', autofocus: true %></div><br />
+					  <div class="login"><%#= f.label :password %><br />
+					  <%= f.password_field :password_digest, placeholder: 'password', autocomplete: "off" %></div><br /><br />
+					  <div class="login"><%= f.submit "Log in" %></div><br />
+					<% end %>
+
+					<%= link_to 'Not signed up?', user_modal_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#myModal'}  %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

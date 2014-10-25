@@ -1,0 +1,15 @@
+Reco
+=====
+
+Reco is a continuation of ARTillery where the user is able to search through endless amount of photos conveniently.
+
+Rekognize API
+-------------
+
+Using the Rekognize API, photos can be trained to recognize patterns in facial coordinates and topography making it easier to search against and find what you're looking. To use simply add gem 'rekognize' in your Gemfile and run a bundle install. 
+
+Features
+--------
+
+This application will use PostgreSQL to store picture data and ElasticSearch to perform the search for scaling purposes. I'm planning on using the gem for that as well but will update this README when I get to that point.
+
