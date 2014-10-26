@@ -58,11 +58,15 @@ gem 'instagram'
 # rekognition
 gem 'rekognize'
 
+# API functionality
 gem 'httparty'
 
+# Bootstrap 
 gem 'bootstrap-sass'
 gem 'bootstrap_helper'
 
+# Uploading photos 
+gem "paperclip", "~> 4.2"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
